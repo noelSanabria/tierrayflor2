@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tierra y Flor</title>
+    <link rel="stylesheet" href="css/estilos_nosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://www.paypal.com/sdk/js?client-id=AXgmAKbbsCbmYD9LS12I87MiomcwiOWTr5utAbC1wJsjcK9hWRch4CNJKVb8NAurV85Ca5bPBdpSda-4&currency=USD"></script>
+    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+           <a href="inicio.html" class="navbar-brand">
+              <span>Tierra</span>yFlor
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+              aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse " id="navbarS">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                    <a href="inicio.html" class="nav-link">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="tienda.html" class="nav-link">Tienda</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="registro.html" class="nav-link">Registro</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="carrito.html" class="nav-link">Mi Carrito</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+            
+    <div id="slide1" class="slide">
+        <div class="title">
+            <h1> Sobre Nosotros?</h1>
+            <p style="font-size: 120%;color: rgb(10, 10, 10);">Tierra y Flor es una página web comprometida con la preservación del medio ambiente y el desarrollo
+                sostenible. Nuestro catálogo de productos es una selección de elementos orgánicos, sostenibles y
+                amigables con el medio ambiente, como plantas orgánicas, herramientas de jardinería y productos de
+                limpieza ecológicos.
+
+                Cada vez que alguien realiza una compra en nuestra página, una parte de las ganancias se destina a una
+                fundación sin fines de lucro que se encarga de promover la educación ambiental, la conservación y la
+                protección del medio ambiente, y el desarrollo sostenible en la comunidad. De esta manera, al comprar en
+                Tierra y Flor, no solo estás adquiriendo productos de alta calidad y sostenibles, sino que también estás
+                contribuyendo a una buena causa.
+
+                Además, para incentivar a la comunidad a participar en esta iniciativa, ofrecemos un descuento del 5% en
+                el total de la compra a todas aquellas personas que decidan donar a la fundación. De esta manera,
+                estamos seguros de que estamos generando un impacto positivo en la comunidad y promoviendo una cultura
+                de cuidado y protección del medio ambiente.
+
+                Agradecemos a la junta vecinal por apoyarnos en este proyecto y por ser parte de esta iniciativa en
+                favor del medio ambiente y el desarrollo sostenible. Juntos, podemos hacer la diferencia. ¡Únete a
+                Tierra y Flor hoy mismo!
+            </p>
+            
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal.Buttons().render('#paypal-button-container');
+    </script>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+</body>
+</html>
