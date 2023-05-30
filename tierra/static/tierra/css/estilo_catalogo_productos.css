@@ -1,0 +1,19 @@
+.text-center.mb-5 {
+    margin: 70px; /* ajusta el valor de acuerdo a tus necesidades */
+  }
+  
+  .card .card-img-top{
+  width: 355px;
+  height: 200px;
+    
+  }
+  
+  .price {
+    font-size: 1.2em;
+    
+   
+  color:black;
+    
+   
+  font-weight: bold;
+  }

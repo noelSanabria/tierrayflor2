@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-       <a href="inicio.html" class="navbar-brand">
+       <a href="{% url 'inicio'%}" class="navbar-brand">
           <span>Tierra</span>yFlor
        </a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
@@ -28,29 +28,30 @@
        <div class="collapse navbar-collapse " id="navbarS">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
              <li class="nav-item">
-                <a href="inicio.html" class="nav-link">Inicio</a>
+                <a href="{% url 'inicio'%}" class="nav-link">Inicio</a>
              </li>
              <li class="nav-item">
-                <a href="tienda.html" class="nav-link">Tienda</a>
+                <a href="{% url 'tienda'%}" class="nav-link">Tienda</a>
              </li>
              <li class="nav-item">
-                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="{% url 'nosotros'%}" class="nav-link">Nosotros</a>
              </li>
              <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="{% url 'contacto'%}" class="nav-link">Contacto</a>
              </li>
              <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
+                <a href="{% url 'login'%}" class="nav-link">Login</a>
              </li>
              <li class="nav-item">
-                <a href="registro.html" class="nav-link">Registro</a>
+                <a href="{% url 'resgistro'%}" class="nav-link">Registro</a>
              </li>
              <li class="nav-item">
-                <a href="carrito.html" class="nav-link">Mi Carrito</a>
+                <a href="{% url 'carrito'%}" class="nav-link">Mi Carrito</a>
              </li>
           </ul>
        </div>
     </div>
+ </nav>
  </nav>
       <div class="container mt-5">
         <h1 class="text-center mb-5">Rosas</h1>
@@ -62,7 +63,7 @@
                 <h5 class="card-title">Rosas</h5>
                 <p class="card-text"> Las rosas son plantas perennes conocidas por sus hermosas flores y su amplia variedad de colores y formas.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="rosas.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'rosas'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@
                 <h5 class="card-title">Geranios</h5>
                 <p class="card-text"> Los geranios son plantas anuales o perennes que producen vistosas flores en colores brillantes, como rojo, rosa, blanco y violeta.</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="geranios.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'geranios'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@
                 <h5 class="card-title">Lavanda</h5>
                 <p class="card-text">La lavanda es una planta perenne aromática conocida por su aroma y hermosas flores en tonos de azul, violeta o rosa.</p>
                 <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="lavanda.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'lavanda'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -95,7 +96,7 @@
                 <h5 class="card-title">Helecho</h5>
                 <p class="card-text"> Los helechos son plantas perennes que se caracterizan por sus frondes verdes y exuberantes.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="helecho.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'helecho'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@
                 <h5 class="card-title">Petunias</h5>
                 <p class="card-text"> Las petunias son plantas anuales que producen flores en una amplia gama de colores muy variados.</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="petunias.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'petunias'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -117,7 +118,7 @@
                 <h5 class="card-title">Lirio</h5>
                 <p class="card-text">Los lirios son plantas perennes bulbosas que pertenecen a la familia Liliaceae y son de colores variados.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="lirio.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'lirio'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>

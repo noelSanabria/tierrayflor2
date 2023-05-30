@@ -15,44 +15,43 @@
 
 <body>
 
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-       <a href="inicio.html" class="navbar-brand">
-          <span>Tierra</span>yFlor
-       </a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-          aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse " id="navbarS">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-                <a href="inicio.html" class="nav-link">Inicio</a>
-             </li>
-             <li class="nav-item">
-                <a href="tienda.html" class="nav-link">Tienda</a>
-             </li>
-             <li class="nav-item">
-                <a href="nosotros.html" class="nav-link">Nosotros</a>
-             </li>
-             <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
-             </li>
-             <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
-             </li>
-             <li class="nav-item">
-                <a href="registro.html" class="nav-link">Registro</a>
-             </li>
-             <li class="nav-item">
-                <a href="carrito.html" class="nav-link">Mi Carrito</a>
-             </li>
-          </ul>
-       </div>
-    </div>
- </nav>
-
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+     <a href="{% url 'inicio'%}" class="navbar-brand">
+        <span>Tierra</span>yFlor
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+        aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse " id="navbarS">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+              <a href="{% url 'inicio'%}" class="nav-link">Inicio</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'tienda'%}" class="nav-link">Tienda</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'nosotros'%}" class="nav-link">Nosotros</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'contacto'%}" class="nav-link">Contacto</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'login'%}" class="nav-link">Login</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'resgistro'%}" class="nav-link">Registro</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'carrito'%}" class="nav-link">Mi Carrito</a>
+           </li>
+        </ul>
+     </div>
+  </div>
+</nav>
 
  
         </div>
@@ -68,7 +67,7 @@
                 <h5 class="card-title">Tierra de hoja estándar</h5>
                 <p class="card-text">Esta es la tierra de hoja básica. Está compuesta principalmente de materia orgánica descompuesta</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="tierra_normal.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_normal'%}  "class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -79,7 +78,7 @@
                 <h5 class="card-title">Tierra de hoja tamizada</h5>
                 <p class="card-text"> Este tipo de tierra de hoja ha sido tamizada o cribada para eliminar los trozos más grandes de materia orgánica.</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="tierra_tamizada.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_tamizada'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -90,7 +89,7 @@
                 <h5 class="card-title">Tierra de hoja enriquecida</h5>
                 <p class="card-text"> Esta tierra de hoja ha sido enriquecida con nutrientes adicionales, como compost, estiércol o turba.</p>
                 <p>El precio del producto es: <span class="price">$8.000</span></p>
-                <a href="tierra_enriquecida.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_enriquecida'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -101,7 +100,7 @@
                 <h5 class="card-title">Tierra de hoja para maceteros</h5>
                 <p class="card-text">Este tipo de tierra de hoja está especialmente formulado para su uso en macetas y contenedores.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="tierra_maceteros.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_maceteros'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -112,7 +111,7 @@
                 <h5 class="card-title">Tierra de hoja acida</h5>
                 <p class="card-text"> Este tipo de tierra de hoja está formulada específicamente para plantas que prefieren suelos ácidos.</p>
                 <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="tierra_acida.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_acida'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -123,7 +122,7 @@
                 <h5 class="card-title">Tierra de hoja para maceteros tamizada</h5>
                 <p class="card-text">Este tipo de tierra de hoja es una mezcla de tierra para maceteros y tierra tamizada lo cual quedara uniforme.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="tierra_macetero_tamizada.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'tierra_macetero_tamizada'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>

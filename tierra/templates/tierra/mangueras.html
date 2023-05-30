@@ -15,9 +15,10 @@
 
 <body>
  <!-- Navbar -->
+ 
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-     <a href="inicio.html" class="navbar-brand">
+     <a href="{% url 'inicio'%}" class="navbar-brand">
         <span>Tierra</span>yFlor
      </a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
@@ -27,30 +28,34 @@
      <div class="collapse navbar-collapse " id="navbarS">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
            <li class="nav-item">
-              <a href="inicio.html" class="nav-link">Inicio</a>
+              <a href="{% url 'inicio'%}" class="nav-link">Inicio</a>
            </li>
            <li class="nav-item">
-              <a href="tienda.html" class="nav-link">Tienda</a>
+              <a href="{% url 'tienda'%}" class="nav-link">Tienda</a>
            </li>
            <li class="nav-item">
-              <a href="nosotros.html" class="nav-link">Nosotros</a>
+              <a href="{% url 'nosotros'%}" class="nav-link">Nosotros</a>
            </li>
            <li class="nav-item">
-              <a href="contacto.html" class="nav-link">Contacto</a>
+              <a href="{% url 'contacto'%}" class="nav-link">Contacto</a>
            </li>
            <li class="nav-item">
-              <a href="login.html" class="nav-link">Login</a>
+              <a href="{% url 'login'%}" class="nav-link">Login</a>
            </li>
            <li class="nav-item">
-              <a href="registro.html" class="nav-link">Registro</a>
+              <a href="{% url 'resgistro'%}" class="nav-link">Registro</a>
            </li>
            <li class="nav-item">
-              <a href="carrito.html" class="nav-link">Mi Carrito</a>
+              <a href="{% url 'carrito'%}" class="nav-link">Mi Carrito</a>
            </li>
         </ul>
      </div>
   </div>
 </nav>
+
+ 
+        </div>
+      </nav>
       <div class="container mt-5">
         <h1 class="text-center mb-5">Manguera estandar</h1>
         <div class="row justify-content-center">
@@ -61,7 +66,7 @@
                 <h5 class="card-title">Manguera estandar</h5>
                 <p class="card-text"> Es el tipo de manguera más utilizada en la jardinería. Por lo general, está hecho de materiales como PVC o caucho.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="Manguera_estandar.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'Manguera_estandar'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -72,7 +77,7 @@
                 <h5 class="card-title">Manguera expandible</h5>
                 <p class="card-text"> Este tipo de manguera se expande en longitud cuando se llena de agua y se contrae cuando se vacía.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="manguera_expandible.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_expandible'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -83,7 +88,7 @@
                 <h5 class="card-title">Manguera de riego por goteo</h5>
                 <p class="card-text">Estas mangueras están diseñadas específicamente para el riego por goteo, que es un método eficiente de riego.</p>
                 <p>El precio del producto es: <span class="price">$100.000</span></p>
-                <a href="manguera_goteo.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_goteo'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -94,7 +99,7 @@
                 <h5 class="card-title">Mangueras de riego por aspersión</h5>
                 <p class="card-text">Son mangueras con pequeñas boquillas que rocían agua en forma de lluvia sobre las plantas.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="manguera_aspersion.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_aspersion'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -105,7 +110,7 @@
                 <h5 class="card-title">Manguera de alta presión</h5>
                 <p class="card-text"> Son mangueras resistentes y duraderas diseñadas para soportar altas presiones de agua.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="manguera_alta_presion.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_alta_presion'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -116,7 +121,7 @@
                 <h5 class="card-title">Mangueras de riego subterráneo</h5>
                 <p class="card-text">Son mangueras enterradas bajo el suelo que permiten el riego de plantas de forma subterránea.</p>
                 <p>El precio del producto es: <span class="price">$120.000</span></p>
-                <a href="manguera_subterraneo.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_subterraneo'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>

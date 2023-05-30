@@ -15,43 +15,43 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-       <a href="inicio.html" class="navbar-brand">
-          <span>Tierra</span>yFlor
-       </a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-          aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse " id="navbarS">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-                <a href="inicio.html" class="nav-link">Inicio</a>
-             </li>
-             <li class="nav-item">
-                <a href="tienda.html" class="nav-link">Tienda</a>
-             </li>
-             <li class="nav-item">
-                <a href="nosotros.html" class="nav-link">Nosotros</a>
-             </li>
-             <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
-             </li>
-             <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
-             </li>
-             <li class="nav-item">
-                <a href="registro.html" class="nav-link">Registro</a>
-             </li>
-             <li class="nav-item">
-                <a href="carrito.html" class="nav-link">Mi Carrito</a>
-             </li>
-          </ul>
-       </div>
-    </div>
- </nav>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+     <a href="{% url 'inicio'%}" class="navbar-brand">
+        <span>Tierra</span>yFlor
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+        aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse " id="navbarS">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+              <a href="{% url 'inicio'%}" class="nav-link">Inicio</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'tienda'%}" class="nav-link">Tienda</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'nosotros'%}" class="nav-link">Nosotros</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'contacto'%}" class="nav-link">Contacto</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'login'%}" class="nav-link">Login</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'resgistro'%}" class="nav-link">Registro</a>
+           </li>
+           <li class="nav-item">
+              <a href="{% url 'carrito'%}" class="nav-link">Mi Carrito</a>
+           </li>
+        </ul>
+     </div>
+  </div>
+</nav>
       <div class="container mt-5">
         <h1 class="text-center mb-5">Arbustos</h1>
         <div class="row justify-content-center">
@@ -63,7 +63,7 @@
                 <p class="card-text">Hojas opuestas, simples y brillantes de color verde oscuro. Produce pequeñas flores de color blanco o crema.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
 
-                <a href="libutrina.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'libutrina'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
                 <h5 class="card-title">Arbusto de mariposa</h5>
                 <p class="card-text">Las flores son de colores variados, como rosa, púrpura o blanco. Las hojas son lanceoladas y de color verde grisáceo.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="arbusto_mariposa.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'arbusto_mariposa'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
                 <h5 class="card-title">Boj</h5>
                 <p class="card-text"> Las hojas son pequeñas, ovaladas y de color verde oscuro brillante. Puede alcanzar hasta 3 metros de altura.</p>
                 <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="boj.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'boj'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
                 <h5 class="card-title">Forsythia</h5>
                 <p class="card-text">Las flores son amarillas y aparecen en ramas desnudas. Las hojas son simples y opuestas, de color verde medio.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="Forsythia.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'Forsythia'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
                 <h5 class="card-title">Laurel de montaña</h5>
                 <p class="card-text"> Las flores son en forma de copa y pueden ser de color rosa, blanco o rojo. Las hojas son de color verde oscuro.</p>
                 <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="laurel.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'laurel'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
                 <h5 class="card-title">Rosa rugosa</h5>
                 <p class="card-text">Las flores son grandes y simples, de color rosa, blanco o rojo. Las hojas son grandes y rugosas, de color verde oscuro.</p>
                 <p>El precio del producto es: <span class="price">$25.000</span></p>
-                <a href="rosa.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'rosa'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>

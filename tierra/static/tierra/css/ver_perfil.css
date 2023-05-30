@@ -1,0 +1,82 @@
+/* Estilos para el avatar */
+
+.avatar {
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+}
+
+/* Estilos para la información del usuario */
+.user-info {
+    text-align: center;
+}
+
+.user-info h3 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.user-info p {
+    font-size: 18px;
+}
+
+.user-info ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.user-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-info h4 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #499c6e;
+    color: rgb(245, 240, 240);
+    padding: 20px;
+}
+
+header a.navbar-brand {
+    color: rgb(247, 240, 240);
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+header a.nav-link {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header a.nav-link:hover {
+    color: #F5F5F5;
+}
+
+/* Estilos para la página en general */
+body {
+    background-color: #d6e9d6;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de la página */
+.btn-primary {
+    background-color: #3CB371;
+    border-color: #3CB371;
+}
+
+.btn-primary:hover {
+    background-color: #2E8B57;
+    border-color: #2E8B57;
+}

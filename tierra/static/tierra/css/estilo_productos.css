@@ -1,0 +1,13 @@
+.col-md-6 .producto{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.img-fluid{
+    margin: 80px;
+    margin-left: 0%;
+    display: flex;
+    width: 400px;
+   height: 500px;
+   border-radius: 20%;
+}

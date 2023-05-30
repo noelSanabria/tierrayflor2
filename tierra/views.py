@@ -2,6 +2,19 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
+def manguera_goteo(request):
+    return render(request,'tierra/manguera_goteo.html')
+
+def tierra_macetero_tamizada(request):
+    return render(request,'tierra/tierra_macetero_tamizada.html')
+
+def tierra_acida(request):
+    return render(request,'tierra/tierra_acida.html')
+
+def arbusto_mariposa(request):
+    return render(request,'tierra/arbusto_mariposa.html')
+
 def inicio(request):
     return render(request,'tierra/inicio.html')
 
@@ -32,8 +45,8 @@ def contacto(request):
 def cultivador(request):
     return render(request,'tierra/cultivador.html')
 
-def forsythia(request):
-    return render(request,'tierra/forsythia.html')
+def Forsythia(request):
+    return render(request,'tierra/Forsythia.html')
 
 def geranios(request):
     return render(request,'tierra/geranios.html')

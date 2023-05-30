@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-       <a href="inicio.html" class="navbar-brand">
+       <a href="{% url 'inicio'%}" class="navbar-brand">
           <span>Tierra</span>yFlor
        </a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
@@ -28,29 +28,30 @@
        <div class="collapse navbar-collapse " id="navbarS">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
              <li class="nav-item">
-                <a href="inicio.html" class="nav-link">Inicio</a>
+                <a href="{% url 'inicio'%}" class="nav-link">Inicio</a>
              </li>
              <li class="nav-item">
-                <a href="tienda.html" class="nav-link">Tienda</a>
+                <a href="{% url 'tienda'%}" class="nav-link">Tienda</a>
              </li>
              <li class="nav-item">
-                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="{% url 'nosotros'%}" class="nav-link">Nosotros</a>
              </li>
              <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="{% url 'contacto'%}" class="nav-link">Contacto</a>
              </li>
              <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
+                <a href="{% url 'login'%}" class="nav-link">Login</a>
              </li>
              <li class="nav-item">
-                <a href="registro.html" class="nav-link">Registro</a>
+                <a href="{% url 'resgistro'%}" class="nav-link">Registro</a>
              </li>
              <li class="nav-item">
-                <a href="carrito.html" class="nav-link">Mi Carrito</a>
+                <a href="{% url 'carrito'%}" class="nav-link">Mi Carrito</a>
              </li>
           </ul>
        </div>
     </div>
+ </nav>
  </nav>
       <div class="container mt-5">
         <h1 class="text-center mb-5">Maceteros</h1>
@@ -62,7 +63,7 @@
                 <h5 class="card-title">Maceteros de mimbre</h5>
                 <p class="card-text">pack de 3 maceteros de mimbre de 30 cm, 20 cm y 10 cm para una vista mas natural y rustica.</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="macetero_mimbre.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'macetero_mimbre'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@
                 <h5 class="card-title">Macetero de terracota</h5>
                 <p class="card-text"> Este tipo de macetero está hecho de arcilla cocida y es popular por su apariencia natural y rústica.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="terracota.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'terracota'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@
                 <h5 class="card-title">Macetero de plástico</h5>
                 <p class="card-text"> pack de 6 maceteros de plásticos económicos, ligeros y duraderos ademas de ser faciles de transportar.</p>
                 <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="plastico.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'plastico'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -95,7 +96,7 @@
                 <h5 class="card-title">Macetero colgante</h5>
                 <p class="card-text">Este tipo de macetero se suspende en el aire y suele tener una estructura colgante, como una cesta o un soporte.</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="colgante.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'colgante'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@
                 <h5 class="card-title">Macetero autorriego</h5>
                 <p class="card-text"> Estos maceteros están diseñados con un sistema de auto-riego que permite a las plantas absorber la cantidad justa de agua .</p>
                 <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="autorriego.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'autorriego'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
@@ -117,7 +118,7 @@
                 <h5 class="card-title">Maceteros de cerámica</h5>
                 <p class="card-text">pack 3 maceteros de cerámica negros son populares por su aspecto elegante y sofisticado.</p>
                 <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="ceramica.html" class="btn btn-primary">Ver</a>
+                <a href="{% url 'ceramica'%}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
