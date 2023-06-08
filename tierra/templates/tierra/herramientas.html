@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas</title>
-    <link rel="stylesheet" href="estilo_catalogo_productos.css">
+    <link rel="stylesheet" href="{% static 'tierra/css/estilo_catalogo_productos.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
 
 </head>
 
@@ -57,7 +59,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/tijeras.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/tijeras.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Tijeras de podar</h5>
                 <p class="card-text"> son herramientas de corte utilizadas para podar plantas, como arbustos, árboles y flores.</p>
@@ -68,7 +70,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/tenedor.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/tenedor.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Cultivador de mano</h5>
                 <p class="card-text"> Se utiliza para aflojar y preparar el suelo, eliminar malezas y cultivar las plantas en áreas pequeñas o estrechas del jardín.</p>
@@ -79,7 +81,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/plantador.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/plantador.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Plantador de bulbos</h5>
                 <p class="card-text"> se utiliza para hacer agujeros en el suelo para plantar bulbos, como tulipanes, narcisos y crocus.</p>
@@ -90,7 +92,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/azadilla.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/azadilla.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Azadilla</h5>
                 <p class="card-text">Se utiliza para eliminar malezas y escardar en áreas pequeñas del jardín, como entre las plantas o en macetas.</p>
@@ -101,7 +103,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/pala.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/pala.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Pala de mano</h5>
                 <p class="card-text"> principalmente para cavar y mover tierra, compost en áreas pequeñas del jardín, como macetas, jardineras o áreas de difícil acceso.</p>
@@ -112,7 +114,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/rastrillo.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/rastrillo.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Rastrillo</h5>
                 <p class="card-text">Se utiliza para nivelar el suelo, recoger hojas, hierbas y escombros, y preparar la superficie del suelo para la siembra.</p>

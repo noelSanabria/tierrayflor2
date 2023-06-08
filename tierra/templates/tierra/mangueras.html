@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mangueras</title>
-    <link rel="stylesheet" href="estilo_catalogo_productos.css">
+    <link rel="stylesheet" href="{% static 'tierra/css/estilo_catalogo_productos.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
 
 </head>
 
@@ -61,7 +63,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_estandar.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_estandar.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Manguera estandar</h5>
                 <p class="card-text"> Es el tipo de manguera más utilizada en la jardinería. Por lo general, está hecho de materiales como PVC o caucho.</p>
@@ -72,7 +74,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_expandible.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_expandible.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Manguera expandible</h5>
                 <p class="card-text"> Este tipo de manguera se expande en longitud cuando se llena de agua y se contrae cuando se vacía.</p>
@@ -83,7 +85,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_goteo.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_goteo.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Manguera de riego por goteo</h5>
                 <p class="card-text">Estas mangueras están diseñadas específicamente para el riego por goteo, que es un método eficiente de riego.</p>
@@ -94,7 +96,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_aspersion.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_aspersion.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Mangueras de riego por aspersión</h5>
                 <p class="card-text">Son mangueras con pequeñas boquillas que rocían agua en forma de lluvia sobre las plantas.</p>
@@ -105,18 +107,18 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_altapresion.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_altapresion.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Manguera de alta presión</h5>
                 <p class="card-text"> Son mangueras resistentes y duraderas diseñadas para soportar altas presiones de agua.</p>
                 <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="{% url 'manguera_alta_presion'%}" class="btn btn-primary">Ver</a>
+                <a href="{% url 'manguera_alta_presion' %}" class="btn btn-primary">Ver</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/manguera_subterraneo.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/manguera_subterraneo.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Mangueras de riego subterráneo</h5>
                 <p class="card-text">Son mangueras enterradas bajo el suelo que permiten el riego de plantas de forma subterránea.</p>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbustos</title>
-    <link rel="stylesheet" href="estilo_catalogo_productos.css">
+    <link rel="stylesheet" href="{%static 'tierra/css/estilo_catalogo_productos.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
 
 </head>
 
@@ -57,7 +58,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/libutrina.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/libutrina.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Ligustrina</h5>
                 <p class="card-text">Hojas opuestas, simples y brillantes de color verde oscuro. Produce pequeñas flores de color blanco o crema.</p>
@@ -69,7 +70,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/mariposa.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/mariposa.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Arbusto de mariposa</h5>
                 <p class="card-text">Las flores son de colores variados, como rosa, púrpura o blanco. Las hojas son lanceoladas y de color verde grisáceo.</p>
@@ -80,7 +81,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/boj.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/boj.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Boj</h5>
                 <p class="card-text"> Las hojas son pequeñas, ovaladas y de color verde oscuro brillante. Puede alcanzar hasta 3 metros de altura.</p>
@@ -91,7 +92,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/Forsythia.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/Forsythia.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Forsythia</h5>
                 <p class="card-text">Las flores son amarillas y aparecen en ramas desnudas. Las hojas son simples y opuestas, de color verde medio.</p>
@@ -102,7 +103,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/laurel.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/laurel.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Laurel de montaña</h5>
                 <p class="card-text"> Las flores son en forma de copa y pueden ser de color rosa, blanco o rojo. Las hojas son de color verde oscuro.</p>
@@ -113,7 +114,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/rosa.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/rosa.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Rosa rugosa</h5>
                 <p class="card-text">Las flores son grandes y simples, de color rosa, blanco o rojo. Las hojas son grandes y rugosas, de color verde oscuro.</p>

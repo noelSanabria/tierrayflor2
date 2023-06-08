@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maceteros</title>
-    <link rel="stylesheet" href="estilo_catalogo_productos.css">
+    <link rel="stylesheet" href="{% static 'tierra/css/estilo_catalogo_productos.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
 
 </head>
 
@@ -58,7 +59,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/maceteros.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/maceteros.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Maceteros de mimbre</h5>
                 <p class="card-text">pack de 3 maceteros de mimbre de 30 cm, 20 cm y 10 cm para una vista mas natural y rustica.</p>
@@ -69,7 +70,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/terracota.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/terracota.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Macetero de terracota</h5>
                 <p class="card-text"> Este tipo de macetero está hecho de arcilla cocida y es popular por su apariencia natural y rústica.</p>
@@ -80,7 +81,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/plastico.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/plastico.png'%}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Macetero de plástico</h5>
                 <p class="card-text"> pack de 6 maceteros de plásticos económicos, ligeros y duraderos ademas de ser faciles de transportar.</p>
@@ -91,7 +92,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/colgante.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/colgante.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Macetero colgante</h5>
                 <p class="card-text">Este tipo de macetero se suspende en el aire y suele tener una estructura colgante, como una cesta o un soporte.</p>
@@ -102,7 +103,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/autorriego.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/autorriego.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Macetero autorriego</h5>
                 <p class="card-text"> Estos maceteros están diseñados con un sistema de auto-riego que permite a las plantas absorber la cantidad justa de agua .</p>
@@ -113,7 +114,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/ceramica.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/ceramica.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Maceteros de cerámica</h5>
                 <p class="card-text">pack 3 maceteros de cerámica negros son populares por su aspecto elegante y sofisticado.</p>

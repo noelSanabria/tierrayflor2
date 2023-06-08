@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantas</title>
-    <link rel="stylesheet" href="estilo_catalogo_productos.css">
+    <link rel="stylesheet" href="{% static 'tierra/css/estilo_catalogo_productos.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
 
 </head>
 
@@ -58,7 +58,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/rosas.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/rosas.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Rosas</h5>
                 <p class="card-text"> Las rosas son plantas perennes conocidas por sus hermosas flores y su amplia variedad de colores y formas.</p>
@@ -69,7 +69,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/geranios.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/geranios.png' %} " alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Geranios</h5>
                 <p class="card-text"> Los geranios son plantas anuales o perennes que producen vistosas flores en colores brillantes, como rojo, rosa, blanco y violeta.</p>
@@ -80,7 +80,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/lavanda.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/lavanda.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Lavanda</h5>
                 <p class="card-text">La lavanda es una planta perenne aromática conocida por su aroma y hermosas flores en tonos de azul, violeta o rosa.</p>
@@ -91,7 +91,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/helecho.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/helecho.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Helecho</h5>
                 <p class="card-text"> Los helechos son plantas perennes que se caracterizan por sus frondes verdes y exuberantes.</p>
@@ -102,7 +102,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/petunias.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/petunias.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Petunias</h5>
                 <p class="card-text"> Las petunias son plantas anuales que producen flores en una amplia gama de colores muy variados.</p>
@@ -113,7 +113,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="card">
-              <img src="img/lirio.png" alt="" class="card-img-top">
+              <img src="{% static 'tierra/imagenes/lirio.png' %}" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Lirio</h5>
                 <p class="card-text">Los lirios son plantas perennes bulbosas que pertenecen a la familia Liliaceae y son de colores variados.</p>
