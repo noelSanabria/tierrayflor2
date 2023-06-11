@@ -11,6 +11,7 @@ class Usuario(models.Model):
     nombre = models.CharField(max_length=100)
     clave = models.CharField(max_length=100)
     telefono = models.CharField(max_length=20)
+    rol = models.ForeignKey('Rol', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nombre
@@ -48,6 +49,7 @@ class Venta(models.Model):
     total = models.DecimalField(max_digits=10, decimal_places=2)
     carrito = models.TextField()
     estatus = models.CharField(max_length=100)
+    usuario = models.ForeignKey('Usuario', on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Venta {self.id_venta}"
@@ -61,8 +63,12 @@ class Pregunta(models.Model):
 
 class Detalle(models.Model):
     id_detalle = models.AutoField(primary_key=True)
+    venta = models.ForeignKey('Venta', on_delete=models.CASCADE)
     cantidad = models.IntegerField()
     subtotal = models.DecimalField(max_digits=10, decimal_places=2)
+
+    def __str__(self):
+        return f"Detalle {self.id_detalle}"
 
 class Producto(models.Model):
     id_producto = models.AutoField(primary_key=True)
@@ -70,6 +76,7 @@ class Producto(models.Model):
     descripcion = models.TextField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField()
+    categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nombre
