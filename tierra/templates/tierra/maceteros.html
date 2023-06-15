@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maceteros</title>
-    <link rel="stylesheet" href="{% static 'tierra/css/estilo_catalogo_productos.css' %}">
+    <link rel="stylesheet" href="{% static 'tierra/css/carro.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="shortcut icon" href="{% static 'tierra/imagenes/logo_sin_fonfo.png' %}" type="image/x-icon">
@@ -54,81 +54,113 @@
     </div>
  </nav>
  </nav>
+ 
+     <!-- Contenedor de elementos -->
+
+     <section class="contenedor">
       <div class="container mt-5">
-        <h1 class="text-center mb-5">Maceteros</h1>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/maceteros.png' %}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Maceteros de mimbre</h5>
-                <p class="card-text">pack de 3 maceteros de mimbre de 30 cm, 20 cm y 10 cm para una vista mas natural y rustica.</p>
-                <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="{% url 'macetero_mimbre'%}" class="btn btn-primary">Ver</a>
+          <h1 class="text-center mb-5">Maceteros</h1>
+          <div class="row justify-content-center">   
+                        
+              <div class="col-md-4 mb-4">       
+              <div class="contenedor-items">                   
+                  <div class="item">
+                      <span class="titulo-item">Maceteros de mimbre </span>
+                      <img src="{% static 'tierra/imagenes/maceteros.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$5.000</span>
+                      <a href="{% url 'macetero_mimbre'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item">Agregar al Carrito</button>
+                  </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/terracota.png' %}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Macetero de terracota</h5>
-                <p class="card-text"> Este tipo de macetero está hecho de arcilla cocida y es popular por su apariencia natural y rústica.</p>
-                <p>El precio del producto es: <span class="price">$20.000</span></p>
-                <a href="{% url 'terracota'%}" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/plastico.png'%}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Macetero de plástico</h5>
-                <p class="card-text"> pack de 6 maceteros de plásticos económicos, ligeros y duraderos ademas de ser faciles de transportar.</p>
-                <p>El precio del producto es: <span class="price">$5.000</span></p>
-                <a href="{% url 'plastico'%}" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/colgante.png' %}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Macetero colgante</h5>
-                <p class="card-text">Este tipo de macetero se suspende en el aire y suele tener una estructura colgante, como una cesta o un soporte.</p>
-                <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="{% url 'colgante'%}" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/autorriego.png' %}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Macetero autorriego</h5>
-                <p class="card-text"> Estos maceteros están diseñados con un sistema de auto-riego que permite a las plantas absorber la cantidad justa de agua .</p>
-                <p>El precio del producto es: <span class="price">$10.000</span></p>
-                <a href="{% url 'autorriego'%}" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tierra/imagenes/ceramica.png' %}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Maceteros de cerámica</h5>
-                <p class="card-text">pack 3 maceteros de cerámica negros son populares por su aspecto elegante y sofisticado.</p>
-                <p>El precio del producto es: <span class="price">$15.000</span></p>
-                <a href="{% url 'ceramica'%}" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-          </div>
-       
-   
+         
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+            <div class="col-md-4 mb-4">
+              <div class="contenedor-items">
+                  <div class="item">
+                      <span class="titulo-item">Macetero autorriego</span>
+                      <img src="{% static 'tierra/imagenes/autorriego.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$10.000</span>
+                      <a href="{% url 'autorriego'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item">Agregar al Carrito</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="contenedor-items">
+                  <div class="item">
+                      <span class="titulo-item">Macetero de terracota</span>
+                      <img src="{% static 'tierra/imagenes/terracota.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$20.000</span>
+                      <a href="{% url 'terracota'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item">Agregar al Carrito</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="contenedor-items">
+                  <div class="item">
+                      <span class="titulo-item">Macetero de plástico</span>
+                      <img src="{% static 'tierra/imagenes/plastico.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$5.000</span>
+                      <a href="{% url 'plastico'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item">Agregar al Carrito</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="contenedor-items">
+                  <div class="item">
+                      <span class="titulo-item">Macetero colgante</span>
+                      <img src="{% static 'tierra/imagenes/colgante.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$10.000</span>
+                      <a href="{% url 'colgante'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item">Agregar al Carrito</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="contenedor-items">
+                  <div class="item">
+                      <span class="titulo-item">Maceteros de cerámica</span>
+                      <img src="{% static 'tierra/imagenes/ceramica.png' %}" alt="" class="img-item">
+                      <span class="precio-item">$15.000</span>
+                      <a href="{% url 'ceramica'%}" class="btn btn-primary">Ver</a>
+                      <button class="boton-item"> Agregar al Carrito </button>
+                  </div>
+              </div>
+            </div>
+          </div>  
+      </div>
+      <!-- Carrito de Compras -->
+      <div class="carrito" id="carrito">
+          <div class="header-carrito">
+              <h2>Tu Carrito</h2>
+          </div>
+
+      <div class="carrito-items">
+      </div>
+      <div class="carrito-total">
+          <div class="fila">
+              <strong>Tu Total</strong>
+              <span class="carrito-precio-total">
+                  $
+              </span>
+          </div>
+          <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+      </div>
+
+</section>
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="{% static 'tierra/js/carro.js' %}"></script>
+
 </body>
-
 </html>

@@ -2,6 +2,23 @@ from django.shortcuts import render
 
 # Create your views here.
 
+def productos_plantas(request):
+    return render(request, 'tierra/productos_plantas.html')
+
+def productos_maceteros(request):
+    return render(request, 'tierra/productos_maceteros.html')
+
+def productos_tierra(request):
+    return render(request, 'tierra/productos_tierra.html')
+
+def productos_mangueras(request):
+    return render(request, 'tierra/productos_mangueras.html')
+
+def productos_herramientas(request):
+    return render(request, 'tierra/productos_herramientas.html')
+
+def productos_arbustos(request):
+    return render(request,'tierra/productos_arbustos.html')
 
 def manguera_goteo(request):
     return render(request,'tierra/manguera_goteo.html')
@@ -93,8 +110,8 @@ def manguera_subterraneo(request):
 def mangueras(request):
     return render(request,'tierra/mangueras.html')
 
-def modificar_contraseña(request):
-    return render(request,'tierra/modificar_contraseña.html')
+def modificar_contrasena(request):
+    return render(request,'tierra/modificar_contrasena.html')
 
 def nosotros(request):
     return render(request,'tierra/nosotros.html')
@@ -120,8 +137,8 @@ def plastico(request):
 def rastrillo(request):
     return render(request,'tierra/rastrillo.html')
 
-def recuperar_contraseña(request):
-    return render(request,'tierra/recuperar_contraseña.html')
+def recuperar_contrasena(request):
+    return render(request,'tierra/recuperar_contrasena.html')
 
 def registro(request):
     return render(request,'tierra/registro.html')

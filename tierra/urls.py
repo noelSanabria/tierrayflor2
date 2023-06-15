@@ -1,8 +1,21 @@
+
 from django.contrib import admin
 from django.urls import path, include
-from .views import inicio,tijeras,cultivador,plantador,azadilla,pala,rastrillo,manguera_alta_presion,manguera_aspersion,manguera_expandible,manguera_subterraneo,Manguera_estandar,manguera_goteo,tierra_enriquecida,tierra_maceteros,tierra_normal,tierra_tamizada,tierra_macetero_tamizada,tierra_acida,rosas,lavanda,helecho,macetero_mimbre,terracota,plastico,colgante,autorriego,ceramica,petunias,lirio,geranios,laurel,rosa,login,tienda,nosotros,contacto,registro,carrito,recuperar_contraseña,arbustos,libutrina,plantas,maceteros,tierra_hoja,mangueras,herramientas,boj,Forsythia,arbusto_mariposa
+from django.conf.urls.static import static
+from django.conf import settings
+from tierra import urls as tierra_urls_module
+from .views import inicio, tijeras, cultivador, plantador, azadilla, pala, rastrillo, manguera_alta_presion, manguera_aspersion, manguera_expandible, manguera_subterraneo, Manguera_estandar, manguera_goteo, tierra_enriquecida, tierra_maceteros, tierra_normal, tierra_tamizada, tierra_macetero_tamizada, tierra_acida, rosas, lavanda, helecho, macetero_mimbre, terracota, plastico, colgante, autorriego, ceramica, petunias, lirio, geranios, laurel, rosa, login, tienda, nosotros, contacto, registro, carrito, recuperar_contrasena, arbustos, libutrina, plantas, maceteros, tierra_hoja, mangueras, herramientas, boj, Forsythia, arbusto_mariposa, productos_arbustos, productos_plantas, productos_maceteros, productos_tierra, productos_mangueras, productos_herramientas
+
 
 urlpatterns = [
+
+    path('productos/arbustos/', productos_arbustos, name='productos_arbustos'),
+    path('productos/plantas/', productos_plantas, name='productos_plantas'),
+    path('productos/maceteros/', productos_maceteros, name='productos_maceteros'),
+    path('productos/tierra/', productos_tierra, name='productos_tierra'),
+    path('productos/mangueras/', productos_mangueras, name='productos_mangueras'),
+    path('productos/herramientas/', productos_herramientas, name='productos_herramientas'),
+
     path('tijeras/',tijeras,name="tijeras"),
     path('cultivador/',cultivador,name="cultivador"),
     path('plantador/',plantador,name="plantador"),
@@ -26,7 +39,7 @@ urlpatterns = [
     path('contacto/',contacto,name="contacto"),
     path('registro/',registro,name="resgistro"),
     path('carrito/',carrito,name="carrito"),
-    path('recuperar_contraseña/',recuperar_contraseña,name="recuperar_contraseña"),
+    path('recuperar_contrasena/', recuperar_contrasena, name="recuperar_contrasena"),
     path('arbustos/',arbustos,name="arbustos"),
     path('libutrina/',libutrina,name="libutrina"),
     path('plantas/',plantas,name="plantas"),
@@ -62,25 +75,16 @@ urlpatterns = [
     path('tierra_maceteros/',tierra_maceteros,name="tierra_maceteros"),
     path('tierra_normal/',tierra_normal,name="tierra_normal"),  
     path('tierra_tamizada/',tierra_tamizada,name="tierra_tamizada"),   
-   
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
 
 
 
 ]
+
+urlpatterns += [
+    path('admin/', admin.site.urls),
+]
+
+path('', include(tierra_urls_module)),
+
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
