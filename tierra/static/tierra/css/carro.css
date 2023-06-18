@@ -1,4 +1,9 @@
-
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding:0;
+  
+}
 
 body{
   background-image: url("imagenes/FONDO.jpg");
@@ -9,7 +14,26 @@ body{
 
 }
 
+a{
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
 
+
+a:hover {
+  color: #991616;
+  cursor: pointer;
+}
+
+
+
+h5{
+  text-align: center;
+
+
+
+}
 
 header{
   background: url(img/header.jpg);
@@ -30,7 +54,6 @@ header h1{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   /* oculto lo que queda fuera del .contenedor */
   contain: paint;
 }
@@ -41,7 +64,8 @@ header h1{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap:30px;
   grid-row-gap: 30px;
-  width: 60%;
+  /* width: 60%; */
+  width: 100%;
   transition: .3s;
 }
 .contenedor .contenedor-items .item{
@@ -202,8 +226,6 @@ header h1{
 .carrito-total .btn-pagar:hover{
   scale: 1.05;
 }
-
-
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
