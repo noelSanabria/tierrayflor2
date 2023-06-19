@@ -4,12 +4,15 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from tierra import urls as tierra_urls_module
-from .views import inicio, tijeras, cultivador, plantador, azadilla, pala, rastrillo, manguera_alta_presion, manguera_aspersion, manguera_expandible, manguera_subterraneo, Manguera_estandar, manguera_goteo, tierra_enriquecida, tierra_maceteros, tierra_normal, tierra_tamizada, tierra_macetero_tamizada, tierra_acida, rosas, lavanda, helecho, macetero_mimbre, terracota, plastico, colgante, autorriego, ceramica, petunias, lirio, geranios, laurel, rosa, login, tienda, nosotros, contacto, registro, carrito, recuperar_contrasena, arbustos, libutrina, plantas, maceteros, tierra_hoja, mangueras, herramientas, boj, Forsythia, arbusto_mariposa, productos_arbustos, productos_plantas, productos_maceteros, productos_tierra, productos_mangueras, productos_herramientas
+
+
+
+from .views import inicio, tijeras, usuario,cultivador,recuperar_contrasena, plantador, azadilla, pala, rastrillo, manguera_alta_presion, manguera_aspersion, manguera_expandible, manguera_subterraneo, Manguera_estandar, manguera_goteo, tierra_enriquecida, tierra_maceteros, tierra_normal, tierra_tamizada, tierra_macetero_tamizada, tierra_acida, rosas, lavanda, helecho, macetero_mimbre, terracota, plastico, colgante, autorriego, ceramica, petunias, lirio, geranios, laurel, rosa, login, tienda, nosotros, contacto, registro, carrito, recuperar_contrasena, arbustos, libutrina, plantas, maceteros, tierra_hoja, mangueras, herramientas, boj, Forsythia, arbusto_mariposa, productos_arbustos, productos_plantas, productos_maceteros, productos_tierra, productos_mangueras, productos_herramientas
 
 
 urlpatterns = [
-
     path('productos/arbustos/', productos_arbustos, name='productos_arbustos'),
+    path('productos/usuario/', usuario, name='usuario'),
     path('productos/plantas/', productos_plantas, name='productos_plantas'),
     path('productos/maceteros/', productos_maceteros, name='productos_maceteros'),
     path('productos/tierra/', productos_tierra, name='productos_tierra'),

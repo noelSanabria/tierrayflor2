@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html, body, section {
+  height: 100%;
+  min-height: 100%;
+}
+
+.text-center{
+  margin: 20px;
+}
+
+.recuperar{
+ text-align: center;
+}
