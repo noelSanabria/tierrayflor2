@@ -1,6 +1,21 @@
 from django.shortcuts import render
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
+
+
+
+
+
+
+
+#-----------------------------------------------------
+def login_view(request):
+    return render(request, 'tierra/login.html')
+
+#-----------------------------------------------------------
+@login_required
+def usuario(request):
+    return render(request, 'tierra/usuario.html')
 
 def productos_plantas(request):
     return render(request, 'tierra/productos_plantas.html')
