@@ -58,53 +58,12 @@
       </div>
    </nav>
 
- <section class="d-flex justify-content-center align-items-center">
-  <div class="card shadow p-4">
-    <div class="card-body">
-      <h1 class="card-title text-center">Inicio sesión</h1>
-      <form id="loginForm" method="post" action="{% url 'usuario'%}">
-        {% csrf_token %}
-        {{ form }}
-
-        <div id="container">
-          <div class="mb-3">
-            <label for="Email" class="form-label">Ingrese su correo:</label>
-            <input type="email" id="Email" class="form-control" name="email" required>
-            {% if form.email.errors %}
-              <div class="errores text-danger">
-                {% for error in form.email.errors %}
-                  {{ error }}
-                {% endfor %}
-              </div>
-            {% endif %}
-            <div id="adv1" class="errores text-danger d-none">El correo no existe</div>
-          </div>
-
-          <div class="mb-3">
-            <label for="Contrasena" class="form-label">Ingrese una contraseña:</label>
-            <input type="password" id="Contrasena" class="form-control" name="password" required>
-            {% if form.password.errors %}
-              <div class="errores text-danger">
-                {% for error in form.password.errors %}
-                  {{ error }}
-                {% endfor %}
-              </div>
-            {% endif %}
-            <div id="adv2" class="errores text-danger d-none">Contraseña incorrecta</div>
-          </div>
-
-          <div class="text-center">
-            <input type="submit" id="Enviar" value="Enviar información" class="btn btn-primary">
-          </div>
-          <div class="recuperar">
-            <a href="{% url 'recuperar_contrasena' %}" class="btn-primary">Olvidé mi contraseña</a>
-          </div>
-        </div>
-      </form>
-      
-    </div>
-  </div>
-</section>
+   <form class="form" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+  
+    <button type="submit" id="submit">Login</button>
+  </form>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"

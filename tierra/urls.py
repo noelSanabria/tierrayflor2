@@ -4,6 +4,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from tierra import urls as tierra_urls_module
+from django.contrib.auth.views import LoginView, LogoutView
 
 
 
@@ -36,7 +37,9 @@ urlpatterns = [
  
 
     path('',inicio,name="inicio"),
-    path('login/',login,name="login"),
+	path('login/', LoginView.as_view(template_name='tierra/login.html'), name='login'),
+    path('logout/', LogoutView.as_view(template_name='tierra/logout.html'), name='logout'),
+
     path('tienda/',tienda,name="tienda"),
     path('nosotros/',nosotros,name="nosotros"),
     path('contacto/',contacto,name="contacto"),

@@ -13,66 +13,7 @@
    <link rel="shortcut icon" href="{% static  'tierra/imagenes/logo_sin_fonfo.png'%}" type="image/x-icon">
 
 
-   <script>
-      var nombreExpr = /^[A-Z][a-zA-Z\s]*$/;
-      var apellidoExpr = /^[A-Z][a-zA-Z\s]*$/;
-      var correoExpr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-z0-9\-\.]+$/;
-      var contrasenaExpr = /^(?=.*[A-Z])(?=.*\d).{6,}$/;
-    
-        $(document).ready(function(){
-        $("#Enviar").click(function(){
-          var nombre = $("#Nombre").val();
-          var apellido = $("#Apellido").val();
-          var correo = $("#Email").val();
-          var contrasena = $("#Contrasena").val();
-          var confirmarContrasena = $("#confirmarContrasena").val();
-    
-          // Validación de nombre
-          if (nombre == "" || !nombreExpr.test(nombre)) {
-            $("#adv1").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv1").addClass("d-none");
-          }
-    
-          // Validación de apellido
-          if (apellido == "" || !apellidoExpr.test(apellido)) {
-            $("#adv3").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv3").addClass("d-none");
-          }
-    
-          // Validación de correo
-          if (correo == "" || !correoExpr.test(correo)) {
-            $("#adv2").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv2").addClass("d-none");
-          }
-    
-          // Validación de contraseña
-          if (contrasena == "" || !contrasenaExpr.test(contrasena)) {
-            $("#adv4").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv4").addClass("d-none");
-          }
-    
-          // Validación de confirmar contraseña
-          if (contrasena !== confirmarContrasena) {
-            $("#adv5").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv5").addClass("d-none");
-          }
-    
-          // Si todas las validaciones son exitosas, puedes continuar con el envío del formulario
-          console.log("Formulario enviado");
-          // Agrega aquí el código para enviar el formulario
-         });
-       });
-    </script>
+   
 </head>
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
