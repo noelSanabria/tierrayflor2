@@ -161,5 +161,7 @@
           </div>
         </div>
       </section>
+      {% csrf_token %}
+      {{ form.as_p }}
 </body>
 </html>
