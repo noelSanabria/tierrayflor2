@@ -1,19 +1,28 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
-# Create your views here.
+from django.contrib.auth.forms import UserCreationForm
+from .forms import UserRegisterForm, PostForm
+from django.contrib import messages
+
+
+def registro(request):
+	if request.method == 'POST':
+		form = UserRegisterForm(request.POST)
+		if form.is_valid():
+			form.save()
+			username = form.cleaned_data['username']
+			messages.success(request, f'Usuario {username} creado')
+			return redirect('feed')
+	else:
+		form = UserRegisterForm()
+
+	context = { 'form' : form }
+	return render(request, 'tierra/registro.html', context)
 
 
 
-
-
-
-
-#-----------------------------------------------------
-def login_view(request):
-    return render(request, 'tierra/login.html')
-
-#-----------------------------------------------------------
-@login_required
+def tienda(request):
+    return render(request,'tierra/tienda.html')
 def usuario(request):
     return render(request, 'tierra/usuario.html')
 
@@ -100,7 +109,6 @@ def libutrina(request):
 
 def lirio(request):
     return render(request,'tierra/lirio.html')
-
 def login(request):
     return render(request,'tierra/login.html')
 
@@ -164,8 +172,6 @@ def rosa(request):
 def rosas(request):
     return render(request,'tierra/rosas.html')
 
-def tienda(request):
-    return render(request,'tierra/tienda.html')
 
 def terracota(request):
     return render(request,'tierra/terracota.html')

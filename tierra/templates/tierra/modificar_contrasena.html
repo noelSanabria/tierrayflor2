@@ -1,78 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-  {% load static %}
 <head>
+   {%load static%}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'tierra/css/estilo_registro.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="{% static  'tierra/imagenes/logo_sin_fonfo.png'%}" type="image/x-icon">
-
-    <title>Modificar ontraseña</title>    
-
-    <script>
-      var nombreExpr = /^[A-Z][a-zA-Z\s]*$/;
-      var apellidoExpr = /^[A-Z][a-zA-Z\s]*$/;
-      var correoExpr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-z0-9\-\.]+$/;
-      var contrasenaExpr = /^(?=.*[A-Z])(?=.*\d).{6,}$/;
+        <link rel="stylesheet" href="{% static 'tierra/css/estilo_registro.css' %}">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/logo_sin_fonfo.png" type="image/x-icon">
+    <title>Modificar ontraseña</title>  
     
-        $(document).ready(function(){
-        $("#Enviar").click(function(){
-          var nombre = $("#Nombre").val();
-          var apellido = $("#Apellido").val();
-          var correo = $("#Email").val();
-          var contrasena = $("#Contrasena").val();
-          var confirmarContrasena = $("#confirmarContrasena").val();
     
-          // Validación de nombre
-          if (nombre == "" || !nombreExpr.test(nombre)) {
-            $("#adv1").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv1").addClass("d-none");
-          }
-    
-          // Validación de apellido
-          if (apellido == "" || !apellidoExpr.test(apellido)) {
-            $("#adv3").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv3").addClass("d-none");
-          }
-    
-          // Validación de correo
-          if (correo == "" || !correoExpr.test(correo)) {
-            $("#adv2").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv2").addClass("d-none");
-          }
-    
-          // Validación de contraseña
-          if (contrasena == "" || !contrasenaExpr.test(contrasena)) {
-            $("#adv4").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv4").addClass("d-none");
-          }
-    
-          // Validación de confirmar contraseña
-          if (contrasena !== confirmarContrasena) {
-            $("#adv5").removeClass("d-none");
-            return false;
-          } else {
-            $("#adv5").addClass("d-none");
-          }
-    
-          // Si todas las validaciones son exitosas, puedes continuar con el envío del formulario
-          console.log("Formulario enviado");
-          // Agrega aquí el código para enviar el formulario
-         });
-       }); 
-    </script>
-
 </head>
 <body>
      <!-- Navbar -->
@@ -105,6 +44,9 @@
                  <li class="nav-item">
                     <a href="registro.html" class="nav-link">Registro</a>
                  </li>
+                 <li class="nav-item">
+                    <a href="carrito.html" class="nav-link">Mi Carrito</a>
+                 </li>
               </ul>
            </div>
         </div>
@@ -114,50 +56,48 @@
 
 
     <section class="d-flex justify-content-center align-items-center">
-  <div class="card shadow p-4">
-    <div class="card-body">
-      <h1 class="card-title text-center">Formulario de Registro</h1>
-      <form id="registroForm">
-        <div id="container">
-          <form id="Formulario">
-            <div class="mb-3">
-              <label for="Nombre" class="form-label">Ingrese su nombre:</label>
-              <input type="text" id="Nombre" class="form-control" />
-              <div id="adv1" class="errores text-danger d-none">Por favor ingrese su nombre con la primera letra mayúscula</div>
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-chat-left-quote"></i> &nbsp; Modificar Contraseña</h4>
             </div>
+            <div class="mb-1">
+                <form id = "contacto" >
+            
+                        <div>
+                            <label for="rut"> <i class="bi bi-person-fill"></i> rut</label>
+                            <input type="text" class="form-control" name="rut" id="rut" placeholder= "ej: 21-154-322-1" required>
+                            <div class="rut text-danger "></div>
+                        </div>
 
-            <div class="mb-3">
-              <label for="Apellido" class="form-label">Ingrese su apellido:</label>
-              <input type="text" id="Apellido" class="form-control" />
-              <div id="adv3" class="errores text-danger d-none">Por favor ingrese su apellido con la primera letra mayúscula</div>
-            </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej:lpcalderon@mail.com" required>
+                        <div class="correo text-danger"></div>
 
-            <div class="mb-3">
-              <label for="Email" class="form-label">Ingrese su correo:</label>
-              <input type="text" id="Email" class="form-control" />
-              <div id="adv2" class="errores text-danger d-none">Por favor ingrese un correo válido</div>
-            </div>
+                        <div>
+                           <label for="contraseña"> <i class="bi bi-person-fill"></i> contraseña</label>
+                           <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder= "**********" required>
+                           <div class="contraseña text-danger "></div>
+                       </div>
 
-            <div class="mb-3">
-              <label for="Contrasena" class="form-label">Ingrese una contraseña:</label>
-              <input type="password" id="Contrasena" class="form-control" />
-              <div id="adv4" class="errores text-danger d-none">Por favor ingrese una contraseña con 8 caracteres minimo una letra mayúscula y un número</div>
-            </div>
 
-            <div class="mb-3">
-              <label for="confirmarContrasena" class="form-label">Repita la contraseña:</label>
-              <input type="password" id="confirmarContrasena" class="form-control" />
-              <div id="adv5" class="errores text-danger d-none">Las contraseñas no coinciden</div>
+                        
+                    </div> 
+                    <div class="mb-2">
+                        <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                              
+                </form>
             </div>
-
-            <div class="text-center">
-              <input type="submit" id="Enviar" value="Enviar información" class="btn btn-primary" />
-            </div>
-          </form>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
+
+    {% csrf_token %}
+    {{ form.as_p }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>
